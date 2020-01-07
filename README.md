@@ -1,25 +1,28 @@
 # calisthenics README
 
 - Employers 能够发布 jobs
-- Employers 也应能看见他们所发布的 jobs 清单
-- Jobseekers 能够保存 jobs 以便以后查看
-- Jobseekers 可以申请 employers 发布的 jobs
-- employers 可以发布两类 Jobs: JReq and ATS
-- JReq 类型的 jobs 需要 resume 才能申请它们
-- ATS 类型的 jobs 无需 resume
-- Jobseekers 不能以他人的 resume 申请 job
-- Jobseekers 能够以不同的 resumes 申请不同的 jobs
-- Jobseekers 能够保存 jobs 清单以便后续查看
-- Jobseekers 能够查看已申请的 jobs 清单
-- Employers 能够通过 job 或者 day 查看申请 job 的 jobseekers。并且可以联合 job 和 day 来查看申请 job 的 jobseekers
-- 能够获取任一 jobseekers 在给定 day 的 jobs 申请情况
-- 能够以 csv 或 html 格式获取 job 申请报告
-- 能够从 job 申请报告中确定 jobseeker，job，employer 和 job 申请日期
-- 通过 job 和 employer 应该能够看到有总 job 申请数量
-- 通过 job 和 employer 应该能够看到有多少 job 申请失败，以及有多少 job 累计成功
-- Jobseekers 在显示时应以他们的名字
-- Employers 在显示时应以他们的名字
-- Jobs 显示时应显示一个 title 和发布它的 employer 的名字
-- 系统能够处理具有相同 title 的多个 jobs
-- 系统能够处理同名的多个 Jobseekers
-- 系统能够处理同名的多个 employer
+- Employers 应能查看他们发布的 jobs 列表
+- Jobseekers 能够保存 employers 已发布的 jobs 以便稍后查阅
+- Jobseekers 能够申请 employers 已发布的 jobs
+- Employers 可以发布两类 Jobs：JReq 和 ATS
+- JReq 类型的 jobs 需要提供 resume 才能申请
+- ATS 类型的 jobs 无需提供 resume
+- Jobseekers 不能以他人的 resume 来申请 job
+- Jobseekers 可以用不同的 resume 来申请不同的 jobs
+- Jobseekers 应能查看自己保存的 jobs 列表
+- Jobseekers 应能查看自己申请的 jobs 列表
+- Employers 应能通过 job 和 date（申请日期）来查看申请了 jobs 的 jobseekers。如果可以，employer 还希望通过这两个条件联合查询在某个 date 申请了某个 job 的 jobseekers
+- Employers 应能通过 job 和一个日期区间来查看申请了 jobs 的 jobseekers。如果可以，employer 还希望通过这两个条件联合查询在某个日期区间内申请了某个 job 的 jobseekers
+- 系统应能生成任一 day 里提交了 jobs application 的所有 jobseekers 的报告
+- 该报告应以 csv 或 html 格式给出
+- Jobseekers 以其名字进行展示
+- Employers 以其名字进行展示
+- Jobs 以其 title 及发布它的 employer 名字进行展示
+- 报告中应包含如下信息：jobseeker、job、employer、job application 日期
+- 系统应能查看每个 employer 发布的每个 job 的 job application 数量
+- 系统应能查看上述 job application 数量中成功和失败的 application 数量
+  - [ongoing] 使用他人的 resume 申请也应计入失败的 application 中
+- 系统应能处理不同 employer 发布的多个有相同 title 的 jobs
+- 系统应能处理同名的多个 jobseekers
+- 系统应能处理同名的多个 employers
+- 系统应能处理同名的 jobseekers 和 employers
